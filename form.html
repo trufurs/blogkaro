@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Sign in</title>
+	</head>
+	<body>
+	<h1>Sign in</h1>
+	<form onsubmit="subme();" onreset="retme();">
+	<table  cellpadding="15" bgcolor="#ffffff" width="1000">
+	<TR>
+	<td>FIRST NAME</td>	
+	<td><input type="text" name="prince" placeholder="ENTER  FIRST NAME"/></td>	
+	</TR>
+	<TR>
+	<td>LAST NAME</td>	
+	<td><input type="text" name="gupta" placeholder="ENTER LAST NAME"/></td>	
+	</TR>
+	<TR>
+	<td>E-MAIL</td>	
+	<td><input type="email" name="email" placeholder="ENTER YOUR EMAIL"/></td>	
+	</TR>	
+	<TR>
+	<td>PASSWORD</td>	
+	<td><input type="password" name="my password" placeholder="ENTER  PASSWORD"/></td>	
+	</TR>	
+	<TR>
+	<td>GENDER</td>
+	<td>
+	<input type="radio" name="gender"  id="male" /><label for="male">MALE</label>
+	<input type="radio" name="gender"  id="female" /><label for="female">FEMALE</label>
+	<input type="radio" name="gender"  id="others" /><label for="others">OTHERS</label>
+	</td>
+	</TR>	
+	<TR>
+	<td>MOBILE NO.</td>	
+	<td><input type="number" name="mobile number" placeholder="ENTER MOBILE NO." onselect="keyboardme();"/></td>	
+	</TR>
+	<tr>
+	<td colspan="2"><input type="checkbox"/>TERMS AND CONDITIONS</td>	
+		
+	</tr>	
+	<TR>	
+	<td><button>submit</button></td>
+	<td><button>reset</button></td>	
+	</TR>	
+	</table>	
+	</form>
+	<script>
+		function subme(){
+			alert("successful")
+		}
+		function retme(){
+			alert("reset")
+		}
+		function keyboardme(){
+			alert("error")
+		}
+	</script>
+	</body>
+</html>
